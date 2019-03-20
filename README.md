@@ -6,10 +6,8 @@ Launch server with
 ```
 
 Make a non-streaming request of users
-```
+```sh
 curl "http://localhost:8080/users?limit=2"
-```
-```json
 [
     {
         "uuid": "d000c3db-68a1-412d-b83e-6a7f3f3aa223"
@@ -21,7 +19,7 @@ curl "http://localhost:8080/users?limit=2"
 ```
 
 Make a streaming request of users
-```
+```sh
 curl http://localhost:8080/users -H "Accept: application/stream+json"
 {
   "uuid" : "9fca1b03-1a2e-4ace-b03b-17e2db03b44d"
